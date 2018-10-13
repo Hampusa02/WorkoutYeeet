@@ -12,6 +12,7 @@ padding: 0px;
 body {
 margin: 0;
 padding: 0;
+color: white;
 }
 
 .navbar {
@@ -30,3 +31,4 @@ display: inline-block;
 .navbar ul li a {
 text-decoration: none;
 }
+
