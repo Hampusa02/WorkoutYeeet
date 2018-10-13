@@ -1,7 +1,9 @@
 html {
-    background-color: rgb(16, 8, 40);
+    background-image: url("loler.jpg");
+    background-position: fixed;
     scroll-behavior: smooth;
 }
+
     
 canvas { 
     display: block; 
@@ -22,17 +24,20 @@ canvas {
     width: 1200px;
     margin: 0 auto;
     padding: 0px;
+    
 }
 
 body {
     margin: 0;
     padding: 0;
     color: white;
+    background-color: rgb(14, 2, 2, 0.6);
+    height: 100vh;
 }
 
 .navbar {
     grid-template-columns: 50% 50%;
-    background-color: #030717; 
+    background-color: #7e1f15;
     height: 60px;
 }
 
@@ -51,11 +56,15 @@ body {
 
 .navbar ul li {
     display: inline-block;
-    padding: 0px 10px;
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: white;
+    padding: 25px 22px 22px 22px;
 }
 
+.navbar ul li a:hover {
+    background-color: #08133d;
+    
+}
