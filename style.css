@@ -1,5 +1,5 @@
 html {
-background-color: #292f45;
+background-color: rgb(16, 8, 40);
 scroll-behavior: smooth;
 }
 
@@ -22,13 +22,17 @@ height: 60px;
 
 .navbar ul {
 margin: 0;
+margin: 0px auto;
+padding: 20px;
 }
 
 .navbar ul li {
 display: inline-block;
+padding: 0px 10px;
 }
 
 .navbar ul li a {
 text-decoration: none;
+color: white;
 }
 
