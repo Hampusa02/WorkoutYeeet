@@ -1,5 +1,5 @@
 html {
-    background-image: url("loler.jpg");
+    background-image: url("https://cdn.hipwallpaper.com/i/12/88/59QTXz.jpg");
     background-position: fixed;
     scroll-behavior: smooth;
 }
@@ -37,8 +37,9 @@ body {
 
 .navbar {
     grid-template-columns: 50% 50%;
-    background-color: #7e1f15;
+    background-color: #1a1a1a;
     height: 60px;
+    
 }
 
 .navbar p {
@@ -50,21 +51,46 @@ body {
 .navbar ul {
     margin: 0;
     margin: 0px auto;
-    padding: 20px;
     float: right;
 }
 
 .navbar ul li {
     display: inline-block;
+    border-left: solid #6F2232;
 }
+
+.navbar ul li {
+    display:inline-block;
+    position:relative;
+    margin-top: .4em;  
+    padding: 1em 1em 1em 1em;
+    cursor:pointer;
+    background: #1a1a1a; 
+    color:white; 
+    z-index:0;
+  
+  }
+  .navbar ul li:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0px;
+    background: #6F2232;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .3s ease-out;
+  }
+  .navbar ul li:hover:before{transform: scaleX(1);}
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
     padding: 25px 22px 22px 22px;
+    color: white;
+    transition-property: text-shadow;
 }
 
 .navbar ul li a:hover {
-    background-color: #08133d;
-    
+
+    text-shadow: 1px 1px 3px #000000;
+    transition: ease 1s;
 }
