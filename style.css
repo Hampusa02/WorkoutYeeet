@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 html {
     background-image: url("https://cdn.hipwallpaper.com/i/12/88/59QTXz.jpg");
     background-position: fixed;
+    font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -52,10 +56,14 @@ body {
     
 }
 
-.navbar p {
+.navbar ul li a:active {
+    border-bottom: #6F2232;
+}
+
+.navbar h1 {
     float: left;
     margin: 0 auto;
-    padding: 20px;
+    padding: 13px 0 15px 25px;
 }
 
 .navbar ul {
@@ -66,13 +74,14 @@ body {
 
 .navbar ul li {
     display: inline-block;
-    border-left: solid #6F2232;
+    border-left: solid #6f2232;
 }
 
 .navbar ul li {
     display:inline-block;
     position:relative;
-    margin-top: .4em;  
+    margin: .4em 0px .4em -7px;
+    margin-left: -7px;
     padding: 1em 1em 1em 1em;
     cursor:pointer;
     background: #1a1a1a; 
