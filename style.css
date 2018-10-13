@@ -74,7 +74,7 @@ body {
   
     font-size: 1em;
 
-	animation-duration: 20s;
+	animation-duration: 10s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
@@ -134,6 +134,7 @@ body {
 .item-14{
 	animation-name: anim-14;
 }
+
 @keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
   8.3%,25% { left: 25%; opacity: 1; }
@@ -205,11 +206,14 @@ body {
   74.96%, 91.62% { left: 25%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
 }
+
 @keyframes anim-13 {
 	0%, 66.66% { left: -100%; opacity: 0; }
   74.96%, 91.62% { left: 25%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
-}@keyframes anim-14 {
+}
+
+@keyframes anim-14 {
 	0%, 66.66% { left: -100%; opacity: 0; }
   74.96%, 91.62% { left: 25%; opacity: 1; }
   100% { left: 110%; opacity: 0; }
