@@ -26,6 +26,17 @@ canvas {
     padding: 0px;
 }
 
+#wrapper article{
+	width: 95%;
+    margin: 0 auto;
+    padding-right: 20px;
+    text-align: center;
+    display: grid;
+    height: 80%;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+    margin-bottom: 5px;
+}
 body {
     margin: 0;
     padding: 0;
