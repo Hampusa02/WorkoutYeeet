@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 html {
-    background-image: url("loler.jpg");
+    background-image: url("https://cdn.hipwallpaper.com/i/12/88/59QTXz.jpg");
     background-position: fixed;
+    font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -20,10 +24,37 @@ canvas {
     background-position: 50% 50%; 
 } 
 
+#homepage {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://forum.espace-musculation.com/uploads/monthly_2015_11/gym-1440x900vybu.jpg.0c68876ba1d6b60d4f836b1b95c0fc9c.jpg");
+    background-size: 100% 100%;
+    border-bottom: solid 10px white;
+}
+
+#homepage h1 {
+    text-align: center;
+    font-size: 6em;
+    margin: 0 auto 10px auto;
+    padding-top: 10%;
+    color: #6f2232;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+#homepage h2 {
+    text-align: center;
+    font-size: 5em;
+    margin-top: 10px; 
+    color: #6f2232;
+    text-shadow: 1px 1px 3px #000000;
+}
+
 #wrapper{
     width: 1200px;
+    height: 900px;
     margin: 0 auto;
     padding: 0px;
+    
 }
 
 #wrapper article{
@@ -36,6 +67,7 @@ canvas {
     grid-template-columns: 50% 50%;
     column-gap: 20px;
     margin-bottom: 5px;
+    
 }
 body {
     margin: 0;
@@ -43,38 +75,71 @@ body {
     color: white;
     background-color: rgb(14, 2, 2, 0.6);
     height: 100vh;
+    background-position: fixed;
 }
 
 .navbar {
     grid-template-columns: 50% 50%;
-    background-color: #7e1f15;
+    background-color: #1a1a1a;
     height: 60px;
+    
 }
 
-.navbar p {
+.navbar ul li a:active {
+    border-bottom: #6F2232;
+}
+
+.navbar h1 {
     float: left;
     margin: 0 auto;
-    padding: 20px;
+    padding: 13px 0 15px 25px;
 }
 
 .navbar ul {
     margin: 0;
+    margin-right: 10px;
     margin: 0px auto;
-    padding: 20px;
     float: right;
 }
 
 .navbar ul li {
     display: inline-block;
+    border-left: solid #6f2232;
 }
+
+.navbar ul li {
+    display:inline-block;
+    position:relative;
+    margin: .4em 0px .4em -7px;
+    margin-left: -7px;
+    padding: 1em 1em 1em 1em;
+    cursor:pointer;
+    background: #1a1a1a; 
+    color:white; 
+    z-index:0;
+  
+  }
+  .navbar ul li:before {
+    content: "";
+    position: absolute;
+    z-index:-1;
+    top: 0;  left: 0;  right: 0;  bottom: 0px;
+    background: #6F2232;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    transition: transform .3s ease-out;
+  }
+  .navbar ul li:hover:before{transform: scaleX(1);}
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
     padding: 25px 22px 22px 22px;
+    color: white;
+    transition-property: text-shadow;
 }
 
 .navbar ul li a:hover {
-    background-color: #08133d;
-    
+
+    text-shadow: 1px 1px 3px #000000;
+    transition: ease 1s;
 }
