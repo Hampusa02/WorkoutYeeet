@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 html {
-    background-image: url("https://cdn.hipwallpaper.com/i/12/88/59QTXz.jpg");
+    background-color: #6f2232;
     background-position: fixed;
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth;
@@ -27,7 +27,7 @@ canvas {
 #homepage {
     width: 100%;
     height: 100%;
-    background-image: url("https://forum.espace-musculation.com/uploads/monthly_2015_11/gym-1440x900vybu.jpg.0c68876ba1d6b60d4f836b1b95c0fc9c.jpg");
+    background-image: url("hejpådig.jpg");
     background-size: 100% 100%;
     border-bottom: solid 10px white;
 }
@@ -51,7 +51,7 @@ canvas {
 
 #wrapper{
     width: 1200px;
-    height: 900px;
+    height: 500px;
     margin: 0 auto;
     padding: 0px;
     
@@ -139,7 +139,11 @@ body {
 }
 
 .navbar ul li a:hover {
-
     text-shadow: 1px 1px 3px #000000;
     transition: ease 1s;
+}
+
+footer{
+    background-color: #000000;
+    padding-bottom: 100px;
 }
