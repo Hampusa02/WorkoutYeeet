@@ -4,9 +4,14 @@
     <title>Workouts VAH</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="javascript.js"></script>
-    <link rel="stylesheet" href="style.css">
 </header>
 
 
@@ -34,7 +39,7 @@
             <div class="Navbar_link">
                 <li><a href="#">TIPS</a></li>
             </div>
-            
+
         </nav>
     </div>
 
@@ -47,25 +52,22 @@
         <div id="second-text">
             <div class="showcase-images">
                 <div class="showcase-image">
-                    <img src="lol1.jpg"
-                        alt="">
+                    <img src="lol1.jpg" alt="">
                     <h2>Workout Plans</h2>
                 </div>
                 <div class="showcase-image">
-                    <img src="lol2.jpg"
-                        alt="">
+                    <img src="lol2.jpg" alt="">
                     <h2>Meal Plans</h2>
                 </div>
                 <div class="showcase-image">
-                    <img src="lol3.jpg"
-                        alt="">
+                    <img src="lol3.jpg" alt="">
                     <h2>Exercise List</h2>
                 </div>
             </div>
         </div>
     </div>
 
-<!---    <div id="wrapper">
+    <!---    <div id="wrapper">
 
         <body>
             <h1>Hello darkness my old freind </h1>
@@ -85,17 +87,60 @@
                 <p>testetsatet</p>
             </div>
     </div> -->
-    <footer>
-        hello im very gay
-        <br />
-        <br />
-        this is ho i got my dick to 500 centemiters
+    <!-- Footer -->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+
+            <h3>Company<span>logo</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                ·
+                <a href="#">Blog</a>
+                ·
+                <a href="#">Pricing</a>
+                ·
+                <a href="#">About</a>
+                ·
+                <a href="#">Faq</a>
+                ·
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Company Name &copy; 2015</p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p>Contact Us</p>
+
+            <form action="#" method="post">
+
+                <input type="text" name="email" placeholder="Email" />
+                <textarea name="message" placeholder="Message"></textarea>
+                <button>Send</button>
+
+            </form>
+
+        </div>
 
     </footer>
 </body>
 
 <script>
-    function classToggle() {
+    function classToggle()
+    {
         const navs = document.querySelectorAll('.Navbar_items')
 
         navs.forEach(nav => nav.classList.toggle('Navbar_ToggleShow'));
