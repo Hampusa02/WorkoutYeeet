@@ -51,7 +51,7 @@ body {
 .navbar {
     grid-template-columns: 50% 50%;
     height: 51px;
-    background-color: #4cabe9;
+    background-color: #732929;
     
 }
 
@@ -114,7 +114,7 @@ body {
 }
 
 .navbar ul li a:hover {
-    color: #4cabe9;
+    color: #732929;
     transition: ease 0.3s;
 }
 
