@@ -218,12 +218,12 @@ body {
 }
 
 .showcase-images .showcase-image img {
-    margin: 10px;
+    margin: 10px 30px 10px 30px;
     position: relative;
     display: block;
     border: solid 1px white;
     width: 400px;
-    height: 250px;
+    height: 300px;
 }
 
 footer{
