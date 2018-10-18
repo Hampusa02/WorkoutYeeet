@@ -50,7 +50,7 @@ body {
 
 .navbar {
     grid-template-columns: 50% 50%;
-    height: 60px;
+    height: 51px;
     background-color: #4cabe9;
     
 }
@@ -66,7 +66,7 @@ body {
 .navbar h1 {
     float: left;
     margin: 0 auto;
-    padding: 13px 0 15px 25px;
+    padding: 5px 0 15px 25px;
 }
 
 .navbar ul {
@@ -118,13 +118,20 @@ body {
     transition: ease 0.3s;
 }
 
-#homepage #homepage-text h1, h2 {
-    font-size: 3.4rem;
+#homepage #homepage-text h1, h2, h3, h4 {
     text-align: right;
     margin: 5px;
     padding: 5px;
     color: white;
 
+}
+
+#homepage-text h3 {
+    font-size: 1.9rem;
+}
+
+#homepage-text h1 {
+    font-size: 3.4rem;
 }
 
 #homepage #homepage-text {
@@ -141,20 +148,26 @@ body {
 }
 
 #second-text {
-    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: solid white; 
 }
 
 .showcase-images {
     display: flex;
     text-align: center;
-    align-content: center;
+}
+
+.showcase-images .showcase-image h2 {
+    text-align: center;
 }
 
 .showcase-images .showcase-image img {
-    margin: 0 auto;
+    display: block;
+    margin: 10px;
     border: solid 1px white;
     width: 400px;
-    height: 200px;
+    height: 250px;
 }
 
 footer{
