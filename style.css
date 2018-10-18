@@ -49,42 +49,87 @@ body {
     background-position: fixed;
 }
 
-.navbar {
-    z-index: 99;
-    grid-template-columns: 50% 50%;
-    height: 51px;
+/*******************Navbar*********************/
+
+
+.Navitems-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.Navbar {
     background-color: #732929;
-    width: 100%;
-    position: fixed;
-    border-bottom: solid 1px white;
-}
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+    max-height: 52px;
+  }
+  .Navbar_link {
+    padding-right: 5px
+  }
+  .Navbar_items {
+    display: flex;
+  }
+  .Navbar_items-right {
+    margin-left:auto;
+  }
+  .Navbar_link-toggle {
+    display: none;
+  }
 
-.navbar ul li a {
+  .Navbar_link-brand {
+      margin: 0 0 0 15px;
+      font-size: 1em;
+  }
+  
+  /* How it will look on phones */
+  @media only screen and (max-width: 768px) {
+    .Navbar_items,
+    .Navbar {
+      flex-direction: column;
+    max-height: 100%;
+    }
+  .Navbar_items {
+      display:none;
+    }
+  .Navbar_items-right {
+      margin-left:0;
+    }
+    .Navbar_items-right li {
+        width: 200px;
+    }
+  .Navbar_ToggleShow {
+      display: flex;
+    }
+
+    .Navbar_link-brand {
+        font-size: 0.8em;
+    }
+
+  .Navbar_link-toggle {
+      align-self: flex-end;
+      display: initial;
+      position: absolute;
+      cursor: pointer;
+      margin: 10px 10px 0 0;
+     } 
+  }
+
+.Navbar a {
     font-weight: 900;
+    text-decoration: none;
+    color: white;
 }
 
-.navbar ul li a:active {
-    border-bottom: #6F2232;
-}
 
-.navbar h1 {
+.Navbar h1 {
     float: left;
     margin: 0 auto;
     padding: 5px 0 15px 25px;
 }
 
-.navbar ul {
-    margin: 0;
-    margin-right: 10px;
-    margin: 0px auto;
-    float: right;
-}
 
-.navbar ul li {
-    margin: 0;
-}
-
-.navbar ul li {
+.Navbar li {
     border-left: solid white;
     display:inline-block;
     position:relative;
@@ -97,7 +142,7 @@ body {
 
   
   }
-  .navbar ul li:before {
+  .Navbar li:before {
     content: "";
     position: absolute;
     z-index:-1;
@@ -107,20 +152,21 @@ body {
     transform-origin: 0 50%;
     transition: transform .3s ease-out;
   }
-  .navbar ul li:hover:before{transform: scaleX(1);}
+  .Navbar li:hover:before{transform: scaleX(1);}
 
-.navbar ul li a {
+.Navbar li a {
     text-decoration: none;
     padding: 25px 22px 22px 22px;
     color: white;
     transition-property: text-shadow;
-    font-weight: 900;
+    font-weight: 530;
 }
 
-.navbar ul li a:hover {
+.Navbar li a:hover {
     color: #732929;
     transition: ease 0.3s;
 }
+/*******************Navbar*********************/
 
 #homepage #homepage-text h1, h2, h3, h4 {
     text-align: right;
@@ -141,7 +187,7 @@ body {
 #homepage #homepage-text {
     width: 95%;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 0px;
     padding-bottom: 20px;
     height: 200px;
     overflow: hidden;

@@ -2,6 +2,8 @@
 <html>
 <header>
     <title>Workouts VAH</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="javascript.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -9,14 +11,31 @@
 
 
 <body>
-    <div class="navbar">
-        <h1>Workouts VAH</h1>
-        <ul>
-            <li><a href="active">HOME</a></li>
-            <li><a href="#Workouts">WORKOUTS</a></li>
-            <li><a href="#Meals">MEALS</a></li>
-            <li><a href="#Exercises">EXERCISES</a></li>
-        </ul>
+    <div class="Navbar">
+        <div class="Navbar_link Navbar_link-brand">
+            <p><a href="#home">Workout Shite</a></p>
+        </div>
+        <div class="Navbar_link Navbar_link-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="Navbar_items">
+
+        </nav>
+        <nav class="Navbar_items Navbar_items-right">
+            <div class="Navbar_link">
+                <li><a href="#">WORKOUTS</a></li>
+            </div>
+            <div class="Navbar_link">
+                <li><a href="#">MEALS</a></li>
+            </div>
+            <div class="Navbar_link">
+                <li><a href="#">EXERCISES</a></li>
+            </div>
+            <div class="Navbar_link">
+                <li><a href="#">TIPS</a></li>
+            </div>
+            
+        </nav>
     </div>
 
 
@@ -28,15 +47,18 @@
         <div id="second-text">
             <div class="showcase-images">
                 <div class="showcase-image">
-                    <img src="https://media.self.com/photos/5867a314bf5e49f716efe864/4:3/w_768,c_limit/workout-package_1.png" alt="">
+                    <img src="https://media.self.com/photos/5867a314bf5e49f716efe864/4:3/w_768,c_limit/workout-package_1.png"
+                        alt="">
                     <h2>Workout Plans</h2>
                 </div>
                 <div class="showcase-image">
-                    <img src="http://ew.content.allrecipes.com/sites/default/files/2018-09/30-minute-dinners-for-fall_0.jpg" alt="">
+                    <img src="http://ew.content.allrecipes.com/sites/default/files/2018-09/30-minute-dinners-for-fall_0.jpg"
+                        alt="">
                     <h2>Meal Plans</h2>
                 </div>
                 <div class="showcase-image">
-                    <img src="https://img.etimg.com/thumb/msid-64466784,width-643,imgsize-44629,resizemode-4/men-benefit-more-from-regular-exercise-than-women.jpg" alt="">
+                    <img src="https://img.etimg.com/thumb/msid-64466784,width-643,imgsize-44629,resizemode-4/men-benefit-more-from-regular-exercise-than-women.jpg"
+                        alt="">
                     <h2>Exercise List</h2>
                 </div>
             </div>
@@ -72,5 +94,15 @@
     </footer>
 </body>
 
+<script>
+    function classToggle() {
+        const navs = document.querySelectorAll('.Navbar_items')
+
+        navs.forEach(nav => nav.classList.toggle('Navbar_ToggleShow'));
+    }
+
+    document.querySelector('.Navbar_link-toggle')
+        .addEventListener('click', classToggle);
+</script>
 
 </html>
