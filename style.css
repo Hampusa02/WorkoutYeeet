@@ -1,28 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html {
-    background-color: #6f2232;
     background-position: fixed;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
-    
-canvas { 
-    display: block; 
-    vertical-align: bottom; 
-} 
-
-#particles-js { 
-    z-index: -1;
-    position:absolute; 
-    width: 100%; 
-    height: 100%;  
-    background-repeat: no-repeat; 
-    background-size: 20%; 
-    background-position: 50% 50%; 
-} 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 900!important;
+}
 
 #homepage {
     width: 100%;
@@ -30,24 +18,7 @@ canvas {
     background-image: url("hejpådig.jpg");
     background-size: 100% 100%;
     border-bottom: solid 10px white;
-}
-
-#homepage h1 {
-    text-align: center;
-    font-size: 6em;
-    margin: 0 auto 10px auto;
-    padding-top: 10%;
-    color: #6f2232;
-    text-shadow: 1px 1px 3px #000000;
-}
-
-#homepage h2 {
-    text-align: center;
-    font-size: 5em;
-    margin-top: 10px; 
-    color: #6f2232;
-    text-shadow: 1px 1px 3px #000000;
-}
+} 
 
 #wrapper{
     width: 1200px;
@@ -73,16 +44,19 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    background-color: rgb(14, 2, 2, 0.6);
     height: 100vh;
     background-position: fixed;
 }
 
 .navbar {
     grid-template-columns: 50% 50%;
-    background-color: #1a1a1a;
     height: 60px;
+    background-color: #4cabe9;
     
+}
+
+.navbar ul li a {
+    font-weight: 900;
 }
 
 .navbar ul li a:active {
@@ -103,20 +77,20 @@ body {
 }
 
 .navbar ul li {
-    display: inline-block;
-    border-left: solid #6f2232;
+    margin: 0;
 }
 
 .navbar ul li {
+    border-left: solid white;
     display:inline-block;
     position:relative;
-    margin: .4em 0px .4em -7px;
+    margin: 0 0px 0 -7px;
     margin-left: -7px;
     padding: 1em 1em 1em 1em;
     cursor:pointer;
-    background: #1a1a1a; 
     color:white; 
     z-index:0;
+
   
   }
   .navbar ul li:before {
@@ -124,7 +98,7 @@ body {
     position: absolute;
     z-index:-1;
     top: 0;  left: 0;  right: 0;  bottom: 0px;
-    background: #6F2232;
+    background: white;
     transform: scaleX(0);
     transform-origin: 0 50%;
     transition: transform .3s ease-out;
@@ -136,11 +110,51 @@ body {
     padding: 25px 22px 22px 22px;
     color: white;
     transition-property: text-shadow;
+    font-weight: 900;
 }
 
 .navbar ul li a:hover {
-    text-shadow: 1px 1px 3px #000000;
-    transition: ease 1s;
+    color: #4cabe9;
+    transition: ease 0.3s;
+}
+
+#homepage #homepage-text h1, h2 {
+    font-size: 3.4rem;
+    text-align: right;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+
+}
+
+#homepage #homepage-text {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#homepage #second-text h1 {
+    text-align: center;
+}
+
+#second-text {
+    display: inline-block;
+}
+
+.showcase-images {
+    display: flex;
+    text-align: center;
+    align-content: center;
+}
+
+.showcase-images .showcase-image img {
+    margin: 0 auto;
+    border: solid 1px white;
+    width: 400px;
+    height: 200px;
 }
 
 footer{
